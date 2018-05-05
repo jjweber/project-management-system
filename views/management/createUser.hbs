@@ -1,0 +1,20 @@
+<p>
+    <a href="/" class="btn btn-danger"><i class="fas fa-arrow-left"></i> Back</a>
+</p>
+<form class="needs-validation createUserForm" action="/users/user-save" method="POST" novalidate>
+   <h1>
+        Create A User
+    </h1> 
+    <div class="form-group">
+        <label for="name">User Name</label>
+        <span class="neededField">&#x2605; required</span>
+        <input type="text" class="form-control" name="userName" id="userName" aria-describedby="nameHelp" placeholder="Enter users name" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please enter users name.
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success myButton">Create Project</button>
+</form>

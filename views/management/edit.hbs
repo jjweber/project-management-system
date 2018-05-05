@@ -1,0 +1,63 @@
+<p>
+    <a href="/" class="btn btn-danger"><i class="fas fa-arrow-left"></i> Back</a>
+</p>
+<form class="needs-validation editForm" action="/projects/update-project/{{ project.id }}" method="Post" novalidate>
+    <h1>
+        Update Project Information
+    </h1>
+    <div class="form-group">
+        <input type="hidden" name="id" id="id" value="{{ project.id }}">
+    </div>
+    <div class="form-group">
+        <label for="name">Project Name</label>
+        <span class="neededField">&#x2605; required</span>
+        <input type="text" class="form-control" name="name" id="name" value="{{ project.name }}" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col">
+            <label for="status">Status</label>
+            <span class="neededField">&#x2605; required</span>
+            <input type="text" class="form-control" name="status" id="status" value="{{ project.status }}" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="form-group col">
+            <label for="dueDate">Due Date</label>
+            <span class="neededField">&#x2605; required</span>
+            <input type="text" class="form-control" name="dueDate" id="dueDate" value="{{ formatDate project.dueDate day="numeric" month="numeric" year="numeric" }}" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+    </div>    
+    <div class="form-row">
+        <div class="form-group col">
+            <label for="contractor">Contractor</label>
+            <span class="neededField">&#x2605; required</span>
+            <input type="text" class="form-control" name="contractor" id="contractor" value="{{ project.contractor }}" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="form-group col">
+            <label for="designer">Designer</label>
+            <span class="neededField">&#x2605; required</span>
+            <input type="text" class="form-control" name="designer" id="designer" value="{{ project.designer }}" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="notes">Project Notes</label>
+        <input type="text" class="form-control" name="notes" id="notes" value="{{ project.notes }}">
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>                
+    <button type="submit" class="btn btn-success">Edit Project</button>
+</form>

@@ -1,0 +1,80 @@
+<p>
+    <a href="/" class="btn btn-danger"><i class="fas fa-arrow-left"></i> Back</a>
+</p>
+<form class="needs-validation createForm" action="/projects/project-save" method="POST" novalidate>
+   <h1>
+        Create A Project
+    </h1> 
+    <div class="form-group">
+        <label for="name">Project Name</label>
+        <span class="neededField">&#x2605; required</span>
+        <input type="text" class="form-control needed" name="name" id="name" aria-describedby="emailHelp" placeholder="Enter project name" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please enter the projects name.
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="projectSelect">Project Type</label>
+        <select class="custom-select" name="projectSelect" id="projectSelect">
+            <option selected>Type of project</option>
+            <option value="2Dproject">2D Project</option>
+            <option value="3Dproject">3D Project</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <div class="form-group col">
+            <label for="status">Status</label>
+            <span class="neededField">&#x2605; required</span>
+            <input type="text" class="form-control needed" name="status" id="status" placeholder="Enter project status" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+            Please enter the projects status.
+            </div>
+        </div>
+        <div class="form-group col">
+            <label for="dueDate">Due Date</label>
+            <span class="neededField">&#x2605; required</span>
+            <input type="text" class="form-control needed" name="dueDate" id="dueDate" aria-describedby="dueDateHelp" placeholder="Enter project dueDate" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+            Please enter a due date.
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col">
+            <label for="contractor">Contractor</label>
+            <span class="neededField">&#x2605; required</span>
+            <input type="text" class="form-control needed" name="contractor" id="contractor" aria-describedby="contractorHelp" placeholder="Enter project contractor" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+            Please enter a contractor.
+            </div>        
+        </div>
+        <div class="form-group col">
+            <label for="designer">Designer</label>
+            <span class="neededField">&#x2605; required</span>
+            <input type="text" class="form-control needed" name="designer" id="designer" aria-describedby="designerHelp" placeholder="Enter project designer" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+            Please enter the designers name.
+            </div>        
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="notes">Project Notes</label>
+        <input type="text" class="form-control" name="notes" id="notes" aria-describedby="notesHelp" placeholder="Enter project notes">  
+    </div>    
+    <button type="submit" class="btn btn-success myButton">Create Project</button>
+</form>

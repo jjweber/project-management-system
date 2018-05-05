@@ -1,0 +1,52 @@
+<p>
+    <a href="/" class="btn btn-danger"><i class="fas fa-arrow-left"></i> Back</a>
+</p>
+<div class="span10 offset1">
+        
+    <div class="cardContainer readMe">
+        <h3>Project's Information</h3>
+        <div class="card">
+            <h5 class="card-header boldMe">Project Name:</h5>
+            <div class="card-body">
+                <p class="card-text">{{project.name}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card col">
+                <h5 class="card-header boldMe">Project Status:</h5>
+                <div class="card-body">
+                    <p class="card-text">{{project.status}}</p>
+                </div>
+            </div>
+
+            <div class="card col">
+                <h5 class="card-header boldMe">Project Due Date:</h5>
+                <div class="card-body">
+                    <p class="card-text">{{ formatDate project.dueDate day="numeric" month="numeric" year="numeric"}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card col">
+                <h5 class="card-header boldMe">Project Contractor:</h5>
+                <div class="card-body">
+                    <p class="card-text">{{project.contractor}}</p>
+                </div>
+            </div>            
+
+            <div class="card col">
+                <h5 class="card-header boldMe">Project Designer:</h5>
+                <div class="card-body">
+                    <p class="card-text">{{project.designer}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header boldMe">Project Notes:</h5>
+            <div class="card-body">
+                <p class="card-text">{{project.notes}}</p>
+            </div>
+        </div>
+    </div>
+
+</div>

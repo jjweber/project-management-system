@@ -1,0 +1,13 @@
+<div class="span10 offset1 centerThis">
+    <div class="formContainer deleteMe">
+        <h3>Delete A Project</h3>
+        <form class="form-horizontal deleteForm" action="/projects/delete/{{ project.id }}" method="GET">
+            <input type="hidden" name="id" value="{{project.id}}"/>
+            <h4 class="alert alert-error">Are you sure you want to delete {{ project.name }}</h4>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-danger">Yes</button>
+                <a class="btn btn-warning" href="/">No</a>
+            </div>
+        </form>
+    </div>
+</div>

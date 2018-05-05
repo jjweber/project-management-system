@@ -1,0 +1,25 @@
+<!-- As a heading -->
+<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <span class="navbar-brand mb-0 h1">{{ title }}</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item nav1">
+                <a class="nav-link" href="/projects">All Projects</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link nav2 dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    My Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    {{# each users}}
+                        <a class="dropdown-item" href="/projects/myProjects/{{ usersName }}">{{ usersName }}</a>
+                    {{/each}} 
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>

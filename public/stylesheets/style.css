@@ -1,0 +1,307 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.main-container {
+  background: #FFF;
+  min-height: 80vh;
+}
+
+.bg-primary {
+  background: #000 !important;
+}
+
+.navbar {
+  padding: 2rem;
+  width: 100%;
+}
+
+.navbar-brand {
+  color: #d40000 !important;
+}
+
+.ml-auto, .mx-auto {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #d40000 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #FFF !important;
+}
+
+.dropdown-item:hover {
+  background: #d40000;
+  color: #FFF;
+}
+
+.main-container {
+  padding: 50px;
+  position: relative;
+}
+
+.createUserBtn {
+  position: absolute;
+  right: 35px;
+}
+
+.pageTitle {
+  color: #000;
+  text-shadow: 2px 1.5px 0 #d40000;
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.tableTitle {
+  color: #000;
+  text-shadow: 2px 1.5px 0 #d40000;
+  font-weight: bold;  
+}
+
+.welcomeTitle {
+  color: #000;
+  text-shadow: 2px 1.5px 0 #d40000;
+  font-weight: bold; 
+}
+
+.table {
+  border: 2px solid #d40000;
+  max-width: 100%;
+}
+
+a {
+  color: #d40000;
+}
+
+a:hover {
+  color: #000;
+}
+
+a.btn:hover {
+  color: #FFF;
+}
+
+.createUserForm,
+.createForm,
+.readMe,
+.editForm,
+.deleteMe {
+  background: #000;
+  border: 2px solid #d40000;
+  border-radius: .25rem;
+  width: 80%;
+  padding: 2rem;
+  margin: 2rem auto;
+}
+
+.createUserForm h1,
+.createForm h1,
+.readMe h3,
+.editForm h1 {
+  text-align: center;
+}
+
+.createUserForm {
+  color: #FFF;  
+}
+
+.createUserForm h1 {
+  color: #FFF;
+  text-shadow: 2px 1.5px 0 #d40000;
+}
+
+.createForm {
+  color: #FFF;
+}
+
+.createForm h1 {
+  color: #FFF;
+  text-shadow: 2px 1.5px 0 #d40000;
+}
+
+.readMe {
+  color: #000;
+}
+
+.readMe h3 {
+  color: #FFF;
+  text-shadow: 2px 1.5px 0 #d40000;
+}
+
+.readMe .control-group {
+  margin-bottom: 1rem;
+}
+
+.editForm {
+  color: #FFF;
+}
+
+.editForm h1 {
+  text-shadow: 2px 1.5px 0 #d40000;
+}
+
+.deleteMe h3 {
+  text-shadow: 2px 1.5px 0 #d40000;
+  color: #FFF;
+}
+
+.neededField {
+  color: #d40000;
+  float: right;
+}
+
+.boldMe {
+  font-weight: bold;
+}
+
+.cardContainer .form-actions {
+  text-align: center;
+}
+
+.cardContainer .btn {
+  width: 50%;
+}
+
+.cardContainer .row {
+  margin: 0;
+}
+
+.card {
+  margin: 1rem;
+}
+
+.card.col {
+  padding: 0;
+}
+
+.centerThis {
+  text-align: center;
+}
+
+.formContainer .alert,
+.formContainer label{
+  color: #FFF;
+}
+
+.formContainer table {
+  background: #FFF;
+}
+
+.tableContainer {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.nav-pills .nav-link.active {
+  background: #d40000 !important;
+  border: 2px solid #000;
+}
+
+.nav-pills .nav-link:hover {
+  background: #000 !important;
+  border: 2px solid #d40000;
+  color: #FFF;
+}
+
+.tab-pane h4 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+.table td, .table th {
+  vertical-align: inherit;
+}
+
+.deleteForm .btn {
+  width: 45%;
+  margin-bottom: 1rem;
+}
+
+.deleteForm .btn-warning {
+  font-weight: bold;
+}
+
+.welcomeEmp {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  background: #000;
+  color: #d40000;
+  text-align: center;
+  width: 100%;
+  padding: 15px 0 3px 0;
+  position: fixed;
+  bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 0 2rem;
+  }
+
+  .dropdown-menu {
+    left: -50px;
+  }
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+  tr { border: 1px solid #ccc; }
+  
+  .table td, .table th {
+    padding: 1.5rem .75rem;
+  }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+    padding-left: 50%;
+    padding-bottom: 5px;
+	}
+	
+	td:before { 
+		/* Now like a table header */
+    position: absolute;
+    
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Project Name"; }
+	td:nth-of-type(2):before { content: "Status"; }
+	td:nth-of-type(3):before { content: "Due Date"; }
+	td:nth-of-type(4):before { content: "Contractor"; }
+	td:nth-of-type(5):before { content: "Designer"; }
+	td:nth-of-type(6):before { content: "Project Notes"; }
+}
